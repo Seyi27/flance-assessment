@@ -1,0 +1,116 @@
+.currentWeather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currentweather_temperature,
+.others {
+  padding: 1rem;
+  background: linear-gradient(
+    270deg,
+    rgba(23, 38, 92, 0.6) -6.38%,
+    rgba(2, 110, 189, 0.408) 107.1%
+  );
+  border-radius: 1rem;
+}
+
+.currentweather_temperature {
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.real {
+  font-size: 3rem;
+  color: white;
+}
+
+.toFahrenheitContainer {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toFahrenheitContainer p {
+  padding: 5px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.place {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.others {
+  width: 250px;
+  height: 250px;
+}
+
+.others_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.others_header p {
+  color: white;
+  font-weight: bold;
+}
+
+.others_time {
+  font-size: 30px;
+  padding-top: 20px;
+  color: white;
+}
+
+.others_time p {
+  font-size: 12px;
+  color: white;
+}
+
+.others_bottom_text {
+  color: white;
+}
+
+.current_image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.sunshine_image {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 745px) {
+  .currentWeather {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .currentweather_temperature {
+    width: 250px;
+  }
+}

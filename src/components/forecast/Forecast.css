@@ -1,0 +1,28 @@
+.forecast {
+  margin-top: 2rem;
+  background: linear-gradient(
+    270deg,
+    rgba(23, 38, 92, 0.6) -6.38%,
+    rgba(2, 110, 189, 0.408) 107.1%
+  );
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.forecast-container h3 {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.widget-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 745px) {
+  .widget-container {
+    flex-direction: column;
+  }
+}
