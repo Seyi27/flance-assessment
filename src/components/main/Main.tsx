@@ -40,6 +40,10 @@ const Main = ({
         },
         (error) => {
           setError(error.message);
+
+          // Set a default location (e.g., Lagos, Nigeria) incase permission is not granted
+          setLocation({ latitude: 6.5244, longitude: 3.3792 });
+          getAllWeatherData(6.5244, 3.3792);
         }
       );
     } else {
@@ -59,9 +63,7 @@ const Main = ({
         <>
           {currentWeatherData && <CurrentWeather data={currentWeatherData} />}
 
-          <Forecast
-            data={hourlyWeatherWather.hourly.data}
-          />
+          <Forecast data={hourlyWeatherWather.hourly.data} />
 
           {currentWeatherData && (
             <FiveDaysForecast
